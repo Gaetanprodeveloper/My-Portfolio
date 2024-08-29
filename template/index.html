@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %} 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootoast@1.0.1/dist/bootoast.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/svg-with-js.min.css"
+    />
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="user">
+        <img src="{% static 'images/profil.jpg' %}" />
+        <h3>Gaetan kamdem</h3>
+        <p>Software Engineer|Fullstack Developer</p>
+      </div>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#service">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+    <div id="menu-btn" class="fa-solid fa-bars"></div>
+    <div id="theme-toggler" class="fas fa-moon"></div>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Gaetan Kamdem</h3>
+        <p>I am a Software Engineer|Fullstack Developer</p>
+        <a href="{%static 'CV_p.pdf'%}" download="portfolio" class="btn">Download CV</a>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/gaetan.kamdem.319"
+          class="fab fa-facebook-f"
+        ></a>
+        <a
+          href="https://twitter.com/GaetanKamdem1?s=09"
+          class="fab fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/gaetan.kamdem.361?utm_source=qr"
+          class="fab fa-instagram"
+        ></a>
+        <a href="https://api.whatsapp.com/send?phone=+237697942065" class="fab fa-whatsapp"></a>
+        <a
+          href="https://www.tiktok.com/@gaetankamdem?_r=1&_d=e5hmd84j2gje3a&sec_uid=MS4wLjABAAAAVO5GLr3qYIOeJeMGr8NGL8FvWY3ysGV7ouZ8zWZICcFJ1tItK3eAn01qe95DYYmU&share_author_id=6874989552898475010&sharer_language=en&source=h5_m&u_code=degb6874em8bh5&timestamp=1682494633&user_id=6874989552898475010&sec_user_id=MS4wLjABAAAAVO5GLr3qYIOeJeMGr8NGL8FvWY3ysGV7ouZ8zWZICcFJ1tItK3eAn01qe95DYYmU&utm_source=sms&utm_campaign=client_share&utm_medium=android&share_iid=7183216218752632582&share_link_id=1e85a278-21d9-48dc-bf50-1854e810b7b9&share_app_id=1233"
+          class="fab fa-tiktok"
+        ></a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> me</h1>
+      <div class="row">
+        <div class="box-container">
+          <div class="box">
+            <h3>2+</h3>
+            <p>years of experience</p>
+          </div>
+          <div class="box">
+            <h3>450+</h3>
+            <p>satisfied client</p>
+          </div>
+          <div class="box">
+            <h3>190+</h3>
+            <p>working hours</p>
+          </div>
+          <div class="box">
+            <h3>10+</h3>
+            <p>award won</p>
+          </div>
+        </div>
+        <div class="content">
+          <h3>my name is <span>gaetan kamdem</span></h3>
+          <p>
+            As a full stack developer with expertise in a wide range of modern
+            technologies and frameworks, I offer custom web and mobile app
+            development services that incorporate responsive design, seamless
+            API integration, and robust database management to create dynamic
+            and user-friendly websites, mobile apps, and web applications that
+            meet the unique needs of my clients.
+          </p>
+          <a href="#contact" class="btn">contact me</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="progress">
+          <h3>web Dessign<span>90%</span></h3>
+          <div class="bar bar-1-1"><span></span></div>
+          <h3>Web Application<span>75%</span></h3>
+          <div class="bar bar-1-2"><span></span></div>
+          <h3>Mobile Application<span>80%</span></h3>
+          <div class="bar bar-1-3"><span></span></div>
+          <h3>Desktop Application<span>75%</span></h3>
+          <div class="bar bar-1-2"><span></span></div>
+        </div>
+        <div class="progress">
+          <h3>HTML<span>95%</span></h3>
+          <div class="bar bar-2-1"><span></span></div>
+          <h3>CSS<span>80%</span></h3>
+          <div class="bar bar-2-2"><span></span></div>
+          <h3>JavaScript<span>65%</span></h3>
+          <div class="bar bar-2-3"><span></span></div>
+          <h3>Django FrameWork<span>90%</span></h3>
+          <div class="bar bar-1-1"><span></span></div>
+          <h3>Flutter<span>80%</span></h3>
+          <div class="bar bar-1-3"><span></span></div>
+          <h3>PHP<span>60%</span></h3>
+          <div class="bar bar-1-7"><span></span></div>
+          <h3>C#<span>50%</span></h3>
+          <div class="bar bar-1-8"><span></span></div>
+          <h3>SQL<span>75%</span></h3>
+          <div class="bar bar-1-2"><span></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="service" id="service">
+      <h1 class="heading">my <span>service</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>web design</h3>
+          <p>
+            -Affordable website design for startups and entrepreneurs.<br />
+            -website redisign services to refresh your existing website<br />
+            -mobile responsive designs for optimal user experience.<br />
+            -website maintenance and update to keep your site current and secure
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile"></i>
+          <h3>mobile app development</h3>
+          <p>
+            -Affordable app development packages for small
+            businesses and startups.<br />-Custom mobile app development for iOS
+            and Android.<br />
+            -Expertise in native app development and hybrid app development.<br />
+            -App redesign and optimization services to improve user
+            experience and engagement.
+          </p>
+        </div>
+        
+        <div class="box">
+          <i class="fas fa-search-dollar"></i>
+          <h3>web application development</h3>
+          <p>
+            -Custom web application development using cutting-edge
+            technologies and frameworks.<br />
+            -Customized web application solutions tailored to your
+            business needs.<br />-Ongoing support and maintenance services to
+            ensure your web application stays up-to-date and secure.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-wordpress"></i>
+          <h3>database administrator</h3>
+          <p>
+            -Expert database administration services to ensure optimal
+            performance and reliability.<br />
+            -Database design and architecture for scalable and efficient
+            data management.<br />-Ongoing support and maintenance services to
+            ensure your databases are always up-to-date and secure.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading">my <span>portfolio</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="{%static 'images/image1.jpg'%}" alt="" />
+          <div class="content">
+            <h3>project 01</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image2.jpg" alt="" />
+          <div class="content">
+            <h3>project 02</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image3.jpg" alt="" />
+          <div class="content">
+            <h3>project 03</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image4.jpg" alt="" />
+          <div class="content">
+            <h3>project 04</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image5.jpg" alt="" />
+          <div class="content">
+            <h3>project 05</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image6.jpg" alt="" />
+          <div class="content">
+            <h3>project 06</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> me</h1>
+      <div class="map">
+        <form action="" method="post">
+        {% csrf_token %}
+          <input type="text" placeholder="your name" class="box" name="name" />
+          <input
+            type="email"
+            placeholder="your email"
+            class="box"
+            name="email"
+          />
+          <input
+            type="tel"
+            placeholder="your phone number"
+            class="box"
+            name="telephone"
+          />
+          <textarea
+            name="message"
+            class="box"
+            placeholder="your message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.9667537283094!2d9.706062574435892!3d4.027199295946539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061137b5be776e3%3A0xf6a265bb323eea07!2sDakar!5e0!3m2!1sfr!2scm!4v1683564798021!5m2!1sfr!2scm"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <div class="credits">
+      created by <span>mr. Kamdem</span> | all rights reserved
+    </div>
+
+    <script src="{%static 'javascript/script.js'%}"></script>
+    <script src="https://unpkg.com/bootoast@1.0.1/dist/bootoast.min.js"></script>
+    
+    <script>
+    let menu=document.querySelector("#menu-btn");
+let header=document.querySelector(".header");
+
+menu.onclick=() =>{
+    menu.classList.toggle("fa-times");
+    header.classList.toggle("active");
+}
+
+let themetoggler=document.querySelector("#theme-toggler");
+themetoggler.onclick=() =>{
+    themetoggler.classList.toggle("fa-sun");
+    if(themetoggler.classList.contains("fa-sun")){
+        document.body.classList.add("active")
+    }else{
+        document.body.classList.remove("active")
+    }
+}
+
+
+function toast(message, type) {
+    bootoast.toast({
+        position: 'leftBottom',
+        message,
+        type,
+    });
+}
+
+// Check if there are messages to display
+{% if messages %}
+    {% for message in messages %}
+        // Display a toast for each message
+        toast('{{ message }}', '{{ message.tags }}');
+    {% endfor %}
+{% endif %}
+    </script>
+
+    
+  </body>
+</html>
