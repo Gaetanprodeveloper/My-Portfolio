@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="icon" href="{% static 'images/profil.jpg' %}" type="image/jpg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/svg-with-js.min.css"
@@ -41,6 +42,11 @@
         <a href="{%static 'CV_p.pdf'%}" download="portfolio" class="btn">Download CV</a>
       </div>
       <div class="share">
+      <a href="https://api.whatsapp.com/send?phone=+237697942065" class="fab fa-whatsapp"></a>
+      <a
+          href="https://www.linkedin.com/in/ga%C3%A9tan-kamdem-5b1b64273/"
+          class="fab fa-linkedin"
+        ></a>
         <a
           href="https://www.facebook.com/gaetan.kamdem.319"
           class="fab fa-facebook-f"
@@ -49,11 +55,8 @@
           href="https://twitter.com/GaetanKamdem1?s=09"
           class="fab fa-twitter"
         ></a>
-        <a
-          href="https://www.instagram.com/gaetan.kamdem.361?utm_source=qr"
-          class="fab fa-instagram"
-        ></a>
-        <a href="https://api.whatsapp.com/send?phone=+237697942065" class="fab fa-whatsapp"></a>
+        
+        
         <a
           href="https://www.tiktok.com/@gaetankamdem?_r=1&_d=e5hmd84j2gje3a&sec_uid=MS4wLjABAAAAVO5GLr3qYIOeJeMGr8NGL8FvWY3ysGV7ouZ8zWZICcFJ1tItK3eAn01qe95DYYmU&share_author_id=6874989552898475010&sharer_language=en&source=h5_m&u_code=degb6874em8bh5&timestamp=1682494633&user_id=6874989552898475010&sec_user_id=MS4wLjABAAAAVO5GLr3qYIOeJeMGr8NGL8FvWY3ysGV7ouZ8zWZICcFJ1tItK3eAn01qe95DYYmU&utm_source=sms&utm_campaign=client_share&utm_medium=android&share_iid=7183216218752632582&share_link_id=1e85a278-21d9-48dc-bf50-1854e810b7b9&share_app_id=1233"
           class="fab fa-tiktok"
@@ -181,37 +184,37 @@
         <div class="box">
           <img src="{%static 'images/image1.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 01</h3>
+            <p>SwiftDrop is a cutting-edge delivery management system for real-time tracking, route optimization, and efficient, automated delivery operations.</p>
           </div>
         </div>
         <div class="box">
-          <img src="image2.jpg" alt="" />
+          <img src="{%static 'images/image2.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 02</h3>
+            <p>SwiftDrop integrates MTN and Orange Money APIs for seamless payment processing, enhancing convenience and reliability for both customers and businesses.</p>
           </div>
         </div>
         <div class="box">
-          <img src="image3.jpg" alt="" />
+          <img src="{%static 'images/image3.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 03</h3>
+            <p>The pharmacy management system streamlines inventory, sales, and prescriptions, optimizing operations and enhancing efficiency for pharmacies and healthcare providers.</p>
           </div>
         </div>
         <div class="box">
-          <img src="image4.jpg" alt="" />
+          <img src="{%static 'images/image4.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 04</h3>
+            <p>An e-learning management system facilitates online education by offering course management, interactive learning, assessments, and tracking for students and educators.</p>
           </div>
         </div>
         <div class="box">
-          <img src="image5.jpg" alt="" />
+          <img src="{%static 'images/image5.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 05</h3>
+            <p>An e-commerce management system streamlines online sales, inventory, customer interactions, and payment processing, enhancing the efficiency of digital retail operations.</p>
           </div>
         </div>
         <div class="box">
-          <img src="image6.jpg" alt="" />
+          <img src="{%static 'images/image6.jpg'%}" alt="" />
           <div class="content">
-            <h3>project 06</h3>
+            <p>A patient appointment management system schedules, tracks, and manages medical appointments, improving efficiency and reducing wait times for healthcare providers and patients.</p>
           </div>
         </div>
       </div>
@@ -221,25 +224,25 @@
       <div class="map">
         <form action="" method="post">
         {% csrf_token %}
-          <input type="text" placeholder="your name" class="box" name="name" />
+          <input type="text" placeholder="your name" class="box" name="name" required="true" />
           <input
             type="email"
             placeholder="your email"
             class="box"
-            name="email"
+            name="email" required="true"
           />
           <input
             type="tel"
             placeholder="your phone number"
             class="box"
-            name="telephone"
+            name="telephone" required="true"
           />
           <textarea
             name="message"
             class="box"
             placeholder="your message"
             cols="30"
-            rows="10"
+            rows="10" required="true"
           ></textarea>
           <input type="submit" value="send message" class="btn" />
         </form>
